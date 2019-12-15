@@ -1,0 +1,7 @@
+- name: add user john and create home directory along with u_id
+  user:
+    name: "{{ username }}"
+    uid: "{{ uid }}"
+    state: present
+    create_home: yes
+    shell: "{{ shell }}"
