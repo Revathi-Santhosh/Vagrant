@@ -6,6 +6,7 @@ Vagrant.configure("2") do |config|
     ansible.playbook = "site.yml"
     ansible.inventory_path = "inventory.yml"
     ansible.compatibility_mode = "2.0"
+    ansible.limit = "all"
   end
   config.vm.provider "virtualbox" do |v|
     v.memory = 1024
