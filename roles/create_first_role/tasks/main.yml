@@ -1,0 +1,4 @@
+- name: Test for loop
+  user:
+    name: "{{ item }}"
+  with_items: "{{ usernames }}"
